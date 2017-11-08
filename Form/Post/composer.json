@@ -1,0 +1,21 @@
+{
+  "name": "form/post",
+  "description": "Brand manager adds the facility to manage store brands in Magento2",
+  "require": {
+    "php": "~5.6.0|~7.0.0|~7.1.0",
+    "magento/module-store": "*",
+    "magento/module-backend": "*",
+    "magento/framework": "*"
+  },
+  "type": "magento2-module",
+  "license": "GPL-3.0",
+  ],
+  "autoload": {
+    "files": [
+      "registration.php"
+    ],
+    "psr-4": {
+      "Form\\Post\\": ""
+    }
+  }
+}

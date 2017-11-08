@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../../../../../lib/internal/Magento/Framework/View/Layout/etc/layout_generic.xsd">
+    <update handle="formkey" />
+    <update handle="post_post_grid_block"/>
+    <body>
+        <referenceContainer name="content">
+            <block class="Form\Post\Block\Adminhtml\Post"
+                   name="form_post_post.grid.container" />
+        </referenceContainer>
+    </body>
+</page>

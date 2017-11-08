@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="../../../Backend/etc/menu.xsd">
+    <menu>
+        <add id="Form_Post::post" title="Customer Posts"
+             module="Form_Post" sortOrder="20"
+             resource="Form_Post::post" />
+        <!--<add id="Form_Post::add_news" title="Add News"-->
+             <!--module="Form_Post" sortOrder="1" parent="Form_Post::main_menu"-->
+             <!--action="post/news/new" resource="Form_Post::manage_news" />-->
+        <add id="Form_Post::manage_post" title="Manage Posts"
+             module="Form_Post" sortOrder="1" parent="Form_Post::post"
+             action="post/post/index" resource="Form_Post::manage_post" />
+        <add id="Form_Post::configuration" title="Configurations"
+             module="Form_Post" sortOrder="2" parent="Form_Post::post"
+             action="adminhtml/system_config/edit/section/post"
+             resource="Form_Post::configuration" />
+    </menu>
+</config>
